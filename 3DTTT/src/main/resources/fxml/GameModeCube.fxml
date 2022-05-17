@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../stylesheets/games.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CubeController">
+   <children>
+      <VBox prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <HBox prefHeight="36.0" prefWidth="600.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#returnToMenu" prefHeight="37.0" prefWidth="72.0" text="(QUIT)">
+                     <font>
+                        <Font name="Segoe UI" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="684.0" prefWidth="1280.0">
+               <children>
+                  <VBox fx:id="vbox" prefHeight="684.0" prefWidth="788.0">
+                     <children>
+<!--                        <GridPane hgap="5.0" prefHeight="575.0" prefWidth="788.0" stylesheets="@../stylesheets/board.css" vgap="5.0">-->
+<!--                          <columnConstraints>-->
+<!--                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                          </columnConstraints>-->
+<!--                          <rowConstraints>-->
+<!--                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                          </rowConstraints>-->
+<!--                           <children>-->
+<!--                              <GridPane stylesheets="@../stylesheets/board.css" GridPane.columnIndex="1">-->
+<!--                                <columnConstraints>-->
+<!--                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                                </columnConstraints>-->
+<!--                                <rowConstraints>-->
+<!--                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                                </rowConstraints>-->
+<!--                                 <children>-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />-->
+<!--                                 </children>-->
+<!--                              </GridPane>-->
+<!--                              <GridPane stylesheets="@../stylesheets/board.css" GridPane.rowIndex="1">-->
+<!--                                 <columnConstraints>-->
+<!--                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                                 </columnConstraints>-->
+<!--                                 <rowConstraints>-->
+<!--                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                                 </rowConstraints>-->
+<!--                                 <children>-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.halignment="CENTER" GridPane.valignment="CENTER">-->
+<!--                                       <GridPane.margin>-->
+<!--                                          <Insets />-->
+<!--                                       </GridPane.margin></Button>-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">-->
+<!--                                       <GridPane.margin>-->
+<!--                                          <Insets />-->
+<!--                                       </GridPane.margin></Button>-->
+<!--                                    <Button lineSpacing="5.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">-->
+<!--                                       <GridPane.margin>-->
+<!--                                          <Insets />-->
+<!--                                       </GridPane.margin></Button>-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">-->
+<!--                                       <GridPane.margin>-->
+<!--                                          <Insets />-->
+<!--                                       </GridPane.margin></Button>-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">-->
+<!--                                       <GridPane.margin>-->
+<!--                                          <Insets />-->
+<!--                                       </GridPane.margin></Button>-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">-->
+<!--                                       <GridPane.margin>-->
+<!--                                          <Insets />-->
+<!--                                       </GridPane.margin></Button>-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">-->
+<!--                                       <GridPane.margin>-->
+<!--                                          <Insets />-->
+<!--                                       </GridPane.margin></Button>-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">-->
+<!--                                       <GridPane.margin>-->
+<!--                                          <Insets />-->
+<!--                                       </GridPane.margin></Button>-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">-->
+<!--                                       <GridPane.margin>-->
+<!--                                          <Insets />-->
+<!--                                       </GridPane.margin></Button>-->
+<!--                                 </children>-->
+<!--                                 <GridPane.margin>-->
+<!--                                    <Insets />-->
+<!--                                 </GridPane.margin>-->
+<!--                              </GridPane>-->
+<!--                              <GridPane stylesheets="@../stylesheets/board.css" GridPane.columnIndex="1" GridPane.rowIndex="1">-->
+<!--                                 <columnConstraints>-->
+<!--                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                                 </columnConstraints>-->
+<!--                                 <rowConstraints>-->
+<!--                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                                 </rowConstraints>-->
+<!--                                 <children>-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />-->
+<!--                                 </children>-->
+<!--                              </GridPane>-->
+<!--                              <GridPane stylesheets="@../stylesheets/board.css" GridPane.columnIndex="2" GridPane.rowIndex="1">-->
+<!--                                 <columnConstraints>-->
+<!--                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                                 </columnConstraints>-->
+<!--                                 <rowConstraints>-->
+<!--                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                                 </rowConstraints>-->
+<!--                                 <children>-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />-->
+<!--                                 </children>-->
+<!--                              </GridPane>-->
+<!--                              <GridPane stylesheets="@../stylesheets/board.css" GridPane.columnIndex="3" GridPane.rowIndex="1">-->
+<!--                                 <columnConstraints>-->
+<!--                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                                 </columnConstraints>-->
+<!--                                 <rowConstraints>-->
+<!--                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                                 </rowConstraints>-->
+<!--                                 <children>-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />-->
+<!--                                 </children>-->
+<!--                              </GridPane>-->
+<!--                              <GridPane stylesheets="@../stylesheets/board.css" GridPane.columnIndex="1" GridPane.rowIndex="2">-->
+<!--                                 <columnConstraints>-->
+<!--                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                                 </columnConstraints>-->
+<!--                                 <rowConstraints>-->
+<!--                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                                 </rowConstraints>-->
+<!--                                 <children>-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />-->
+<!--                                    <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseReleased="#buttonPush" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />-->
+<!--                                 </children>-->
+<!--                              </GridPane>-->
+<!--                           </children>-->
+<!--                           <padding>-->
+<!--                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />-->
+<!--                           </padding>-->
+<!--                        </GridPane>-->
+                        <HBox alignment="CENTER_LEFT" prefHeight="90.0" prefWidth="788.0" spacing="10.0" style="-fx-alignment: center;">
+                           <children>
+                              <Button fx:id="moveButton" mnemonicParsing="false" onAction="#sendMove" prefHeight="75.0" prefWidth="200.0" style="-fx-font-size: 25;" text="SEND MOVE">
+                                 <font>
+                                    <Font name="Segoe UI" size="13.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="powerButton" mnemonicParsing="false" onAction="#usePower" prefHeight="75.0" prefWidth="200.0" style="-fx-font-size: 25;" text="USE POWER">
+                                 <font>
+                                    <Font name="Segoe UI" size="13.0" />
+                                 </font>
+                              </Button>
+<!--                              <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="120.0" text="(TURN CUBE)" onAction="#rotateCube">-->
+<!--                                 <font>-->
+<!--                                    <Font name="Segoe UI" size="13.0" />-->
+<!--                                 </font>-->
+<!--                              </Button>-->
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="598.0" prefWidth="615.0" style="-fx-background-color: lightgrey;">
+                     <children>
+                        <Label maxWidth="1.7976931348623157E308" text="Info">
+                           <font>
+                              <Font name="Segoe UI" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="554.0" style="-fx-background-color: Lightgrey; -fx-text-fill: red;" text="Player : RED" />
+                        <Label prefHeight="30.0" prefWidth="554.0" style="-fx-background-color: Lightgrey; -fx-text-fill: Blue;" text="AI 1 : BLUE" />
+                        <Label fx:id="label3" prefHeight="30.0" prefWidth="554.0" style="-fx-background-color: Lightgrey; -fx-text-fill: Green;" text="AI 2 : GREEN" />
+                        <Label fx:id="label4" prefHeight="30.0" prefWidth="554.0" style="-fx-background-color: Lightgrey; -fx-text-fill: Yellow;" text="AI 3 : YELLOW" />
+                        <Label prefHeight="30.0" prefWidth="554.0" style="-fx-background-color: Lightgrey;" />
+                        <Label prefHeight="30.0" prefWidth="554.0" style="-fx-background-color: Lightgrey; -fx-text-fill: Black;" text="Destroyed : BLACK" />
+                        <Label maxWidth="1.7976931348623157E308" text="Powers">
+                           <font>
+                              <Font name="Segoe UI" size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView id="BOMB" fx:id="bombImage" accessibleText="BOMB" fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/bomb.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="REMOVE" fx:id="removeImage" accessibleText="REMOVE" fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/red_x.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="RANDOMIZE" fx:id="randomizeImage" accessibleText="RANDOMIZE" fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/questionMark.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

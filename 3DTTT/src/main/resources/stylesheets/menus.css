@@ -1,0 +1,74 @@
+
+/* http://fxexperience.com/2011/12/styling-fx-buttons-with-css/ */
+.menu-item {
+    -fx-font-family: "Segoe UI";
+}
+
+/*.button {*/
+/*    -fx-background-radius: 1.0em;*/
+/*    -fx-border-color: "rgb(160, 50, 50)";*/
+/*    -fx-border-radius: 1.0em;*/
+/*}*/
+
+/*.menu {*/
+/*    -fx-background-color: "rgb(255, 255, 255)";*/
+/*    -fx-background-radius: 0.3em*/
+/*}*/
+
+.menu-bar {
+    -fx-font-family: "Segoe UI";
+    -fx-background-color: "rgb(160, 50, 50)";
+}
+
+.menu-button {
+    -fx-font-family: "Segoe UI";
+}
+
+.label {
+    -fx-font-family: "Segoe UI"
+}
+
+#green {
+    -fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+	-fx-font-size: 25pt;
+}
+#bevel-grey {
+    -fx-background-color: 
+        linear-gradient(#f2f2f2, #d6d6d6),
+        linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+        linear-gradient(#dddddd 0%, #f6f6f6 50%);
+    -fx-background-radius: 8,7,6;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#bevel-grey2 {
+    -fx-background-color: 
+        linear-gradient(#f2f2f2, #d6d6d6),
+        linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+        linear-gradient(#dddddd 0%, #f6f6f6 50%);
+    -fx-background-radius: 8,7,6;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: Goldenrod;
+	-fx-font-style: italic;
+	-fx-font-weight: bold;
+	-fx-font-size: 35pt;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#iphone-toolbar {
+    -fx-background-color: linear-gradient(#98a8bd 0%, #8195af 25%, #6d86a4 100%);
+	-fx-font-size: 15pt;
+	-fx-text-fill: black;
+}
+#iphone-toolbar-alert {
+    -fx-background-color: linear-gradient(#98a8bd 0%, #8195af 25%, #6d86a4 100%);
+	-fx-font-size: 20pt;
+	-fx-text-fill: red;
+}
+
